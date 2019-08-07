@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100vh;
+  font-family: 'raleway' sans-serif;
+}
+
+
+.hero-image{
+  background: url('assets/hero.jpg');
+  background-size: cover;
+  height: 50vh;
+}
+
+.header{
+  color: white;
+  opacity: 0.9;
+}
+
+
+.can {
+  padding: 10px 2% 5px 2%;
+  background-color: lightpink;
+}
+
+.cando{
+  font-size: 16px;
+  color: cobalt;
+}
+
+
+.kant {
+  padding: 10px 2% 5px 2%;
+  margin-top: 5px;
+  background-color: yellow;
+}
+
+.kantdo{
+  font-size: 16px;
+  color: tomato;
+}
+
+li{
+  color: purple;
+}
+
+.skill{
+  color: red;
+}
