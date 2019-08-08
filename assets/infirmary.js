@@ -44,7 +44,23 @@
 // let newSkill = document.createElement("li")
 //document.querySelector('.kantdo').appendChild(newSkill)
 
-
+// function createCards(projects, inputType){
+//   if(inputType === 'clips'){
+//     const clipDiv = document.querySelector('#clips')
+//       clips.forEach( obj => {
+//         let card = new Card(obj)
+//         console.log('this is a news card', card)
+//         clipDiv.appendChild(card.render())
+//       })
+//   } else if (inputType === 'projects'){
+//     const projectDiv = document.querySelector('#projects')
+//       projects.forEach( obj => {
+//         let card = new Card(obj)
+//         console.log('this is a project card', card)
+//         projectDiv.appendChild(card.render())
+//       })
+//     }
+// }
 //
 // function createNewBlogPost() {
 //     //create a new `<div>` with class of `.blog-post`,

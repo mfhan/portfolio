@@ -92,6 +92,8 @@ function createFunSkill(funCanDos) {
 }
 
 
+// document.addEventListener('submit', generateSkills(canDos, 4))
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myToggler() {
   var x = document.getElementById("myTopnav");
@@ -101,8 +103,6 @@ function myToggler() {
     x.className = "topnav";
   }
 }
-
-
 
 let myProjectsUrl= 'https://docs.google.com/spreadsheets/d/1JzfzPc5KeR3h1kXCp99eI-UnpKKCUpxx1rDDnS3wFsE/edit#gid=0'
 
@@ -134,7 +134,24 @@ fetch(projectSource)
        }
      })
      console.log('these are my projects', projects)
-     createCards(projects)
+     createCards(projects, 'projects')
+})
+
+
+fetch(newsSource)
+  .then( res => res.json())
+  .then( data => {
+     console.log('this id data.feed.entry', data.feed.entry)
+     let clips = data.feed.entry.map( d => {
+       return {
+          title: d.gsx$title.$t,
+          image: d.gsx$image.$t,
+          description: d.gsx$description.$t,
+          link: d.gsx$links.$t
+       }
+     })
+     console.log('these are my news clips', clips)
+     createNewsCards(clips)
 })
 
 
@@ -165,7 +182,7 @@ class Card {
     const cardContent = new CardContent(this.description)
     console.log('this is cardContent', cardContent)
     cardImage.appendChild(image)
-   card.appendChild(cardTitle)
+    card.appendChild(cardTitle)
     card.appendChild(cardImage)
 
     card.appendChild(cardContent.render())
@@ -194,13 +211,24 @@ class CardContent {
 
 function createCards(projects){
   const projectDiv = document.querySelector('#projects')
-  projects.forEach( obj => {
-    let card = new Card(obj)
-    console.log('this is card', card)
-    projectDiv.appendChild(card.render())
-  })
-
+    projects.forEach( obj => {
+      let card = new Card(obj)
+      console.log('this is a project card', card)
+      projectDiv.appendChild(card.render())
+    })
 }
+
+
+function createNewsCards(clips){
+  const clipDiv = document.querySelector('#clips')
+  clips.forEach( obj => {
+    let card = new Card(obj)
+    console.log('this is a news card', card)
+    clipDiv.appendChild(card.render())
+  })
+}
+
+
 
 
 //

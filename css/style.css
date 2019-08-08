@@ -10,7 +10,7 @@ body {
   height: 100vh;
 }
 
-section{
+ section{
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -84,14 +84,13 @@ section{
 .bio-logo {
   height: 25px;
   width: 25px;
-
 }
 
 h3{
-  display: inline-block;
-  /* background-color: grey */
+  display: flex;
   text-align: center;
   color: rgba(255,255,255,1);
+  width: auto;
   background: linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,.2));
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,.2));
 }
@@ -156,7 +155,7 @@ li{
 }
 
 .card {
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
@@ -173,8 +172,8 @@ li{
 
 }
 .card .card-image img {
-  height:180px;
-  object-fit:contain;
+  height:100px;
+  /* object-fit:contain; */
 }
 
 
@@ -185,6 +184,20 @@ li{
     padding: 10px 50px 10px 50px;
     border: 10;
   }
+
+
+.contact{
+      margin: 50px 50px 10px 50px;
+      text-align: center;
+}
+
+button {
+  margin: 10px 10px 10px 10px;
+  background-color: yellow;
+}
+
+
+
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
