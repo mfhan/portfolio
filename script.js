@@ -1,8 +1,8 @@
 const kantDos= [
   'Beat Martha Stewart at a Turkey Cook-Off',
-  'Fix your washer-dryer (I don\'t own one!)',
-  'Run right into hell and back',
-  'Catch a grenade for you',
+  'Fix your washer-dryer (sorry!)',
+  '"Run right into hell and back"',
+  '"Catch a grenade for you"',
   'Sing Cosette\'s part in Les Miserables',
   'Manage the New York Mets\' relief pitching staff',
   'Make macarons',
@@ -10,8 +10,10 @@ const kantDos= [
   'Become an Instagram influencer',
   'Fold a fitted sheet',
   'Direct traffic around Times Square',
-  'Explain the infield fly rule',
-  'Toss pizza dough in the air'
+  'Explain the infield fly rule in baseball',
+  'Toss pizza dough in the air',
+  'Understand everything immediately',
+  'Beat a 6-year-old at chess'
 ]
 
 const canDos = [
@@ -21,7 +23,7 @@ const canDos = [
   'Communicate with tech teams',
   'Write amazing technical documentation',
   'Name variables in a memorable way',
-  'Explain my code in and engaging way',
+  'Explain my code in an engaging way',
   'Build tech communities',
   'Help engineers explain their code',
   'Help non-coders understand what code does',
@@ -66,22 +68,7 @@ const kantElements = kantList.map((element) => {
 
 kantElements.forEach((element) => document.querySelector('.kantdo').appendChild(element));
 
-// const canDoElements = canDoList.map((element) => {
-//   // create element as an li
-//   //console.log(element)
-//   const li = document.createElement('li');
-//   li.classList.add('cando')
-//   li.innerText = element
-//   // we need to style them
-//   return li;
-// })
-//
-// canDoElements.forEach((element) => document.querySelector('.cando').appendChild(element));
 
-//console.log(canDoList)
-
-
-//OPTION 2: FOR EACH ELEMENT
 canDoList.forEach((element) => {
   // create element as an li
   const li = document.createElement('li');
@@ -91,13 +78,6 @@ canDoList.forEach((element) => {
   document.querySelector('.cando').appendChild(li)
   // return element
 })
-
-//console.log(canDoList)
-
-
-
-// let newSkill = document.createElement("li")
-//document.querySelector('.kantdo').appendChild(newSkill)
 
 
 //

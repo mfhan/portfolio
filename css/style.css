@@ -1,12 +1,13 @@
 html,
 body {
+  /* display: flex; */
   height: 100vh;
   font-family: 'raleway' sans-serif;
 }
 
 
 .hero-image{
-  background: url('assets/hero.jpg');
+  background: url('assets/2014amiens1.jpg');
   background-size: cover;
   height: 50vh;
 }
@@ -16,22 +17,43 @@ body {
   opacity: 0.9;
 }
 
+/* container-fluid {
+  width: 100%;
+  } */
+
+.navbar{
+  display:inline-block;
+}
+
+#skills{
+  background-image: url('assets/2014amiens1.jpg');
+  /* url("../assets/rabatcat.jpg"); */
+  background-size: cover;
+  height: 50vh;
+}
+
+h3{
+  background-color: grey
+
+}
 
 .can {
   padding: 10px 2% 5px 2%;
-  background-color: lightpink;
+  margin-top: 5px;
+  /* background-color: lightpink; */
 }
 
 .cando{
   font-size: 16px;
-  color: cobalt;
+  color: black;
+  text-shadow: 2px 2px 2px white;
 }
 
 
 .kant {
   padding: 10px 2% 5px 2%;
   margin-top: 5px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .kantdo{
