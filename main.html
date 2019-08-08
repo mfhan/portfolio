@@ -8,6 +8,7 @@
 
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -15,134 +16,100 @@
 <body>
   <div class="container">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Marie-France Han</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <section class="topnav" id="myTopnav">
+        <a href="#home" class="active">Marie-France Han</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="journalism">Media</a>
+        <!-- <form class="form-inline my-2 my-lg-0"> -->
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+        <a href="javascript:void(0);" class="icon" onClick="myToggler()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </section>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-              <a class="nav-link" href="#projects">Projects</a>
-              <a class="nav-link" href="journalism">Media</a>
-            </li>
-
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
     </header>
 
     <section id='skills'>
       <div class ='kant'>
-        <h3>Stuff I Can't Do:</h3>
+        <h3>A Few Things I Can't Do:</h3>
         <ul class = 'kantdo'>
         </ul>
       </div>
 
       <div class  ='can'>
-        <h3>Things I CAN DO!</h3>
+        <h3>...And Lots of Things I CAN DO For You!</h3>
         <ul class = 'cando'>
-
         </ul>
-
+        <h5>Click here for more skills</h5>
       </div>
     </section>
 
 
     <section id = 'about'>
-        <h2>ABOUT ME</h2>
-          <div class="social">
-            <a href="https://www.facebook.com/mariefrancehan" target="_blank">
-            <img  src="assets/facebook.svg" > </a>
-            <a href="https://www.github.com/mfhan" target="_blank">
-            <img src="assets/github.svg" ></a>
+      <h3>ABOUT ME</h3>
+      <div class="social">
+        <a href="https://www.facebook.com/mariefrancehan" target="_blank">
+          <img class='social-logo'  src="assets/social/icon_facebook.svg" > </a>
+          <a href="https://www.github.com/mfhan" target="_blank">
+            <img class='social-logo'  src="assets/social/GitHub.png" ></a>
             <a href="https://www.LinkedIn.com/in/mariefr" target="_blank">
-            <img src="assets/linkedin.svg"></a>
-        </div>
-       <div class="bio">
+              <img class='social-logo'  src="assets/social/linked25.png"></a>
+      </div>
+      <div class="bio">
         <h2></h2>
-        <p> I was born in France, grew up in Africa and went to college in Paris. I knew I wanted to be a journalist in the U.S., so I got a bilingual job at the UN headquarters in New York and eventually made my way to Columbia journalism school. </p>
-        <p> For many years after that, my world was all about journalism: I was a technology reporter at Reuters, writing about Samsung and Apple's business ties, then a news editor at Bloomberg, publishing stories about Putin's billionaire friends. </p>
-        <p> But... </p>
-        <p>every year I found myself increasingly drawn to the other side of my industry: the technology that was powering the financial databases and news terminals.
-        <p>So I rolled up my (mental) sleeves, stalked all kinds of tech meetups, and started down the road to coding.
-        <p>The most important lesson: Learning to code is HARD -- and such a joy! Over the past few years I've taught myself some JavaScript, including some React.js, Node.js, Express.js; Git/GitHub; some SQL and Python. So much to learn, so little time....</p>
-      </div>
-
-      <div class="contact">
-        <h2>Contact Information</h2>
-        <strong>Email:</strong> <a href="mailto:mf212mf@gmail.com">Say Hi!</a>
-        <br />
-          <strong>Phone:</strong> <a href="tel:6463203548"> 646 320 3548</a>
-    <br />
-
-
-
-    </section>
-
-    <section id = 'projects'>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            One of three columns
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            One of three columns
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            One of three columns
-          </div>
+          <p> I was born in France <img class='bio-logo' src="assets/social/tricolore.png">, spent my childhood in Africa <img class = 'bio-logo' src="assets/social/africa.png"> and went to college in Paris<img class='bio-logo' src="assets/social/eiffel.png">. My dream had always been to become a journalist in the U.S., so I got a bilingual job at the United Nations <img class='bio-logo'  src="assets/social/un_logo.png"> in New York and eventually made my way to Columbia journalism <img class='bio-logo'  src="assets/social/columbia.png">  school. </p>
+          <p> For many years afterwards, my world was all about journalism: I was a technology reporter at Reuters<img class='bio-logo'  src="assets/social/reuters.png">, in South Korea, then a news editor at Bloomberg <img class='bio-logo'  src="assets/social/bloomberg.png"> in New York, breaking news on Samsung and editing stories about Vladimir Putin's <img class='bio-logo'  src="assets/social/angryputin.png"> billionaire friends. </p>
+          <p> But... <img class='bio-logo'  src="assets/social/thought.png">  ... <img class='bio-logo'  src="assets/social/thought.png">... <img class='bio-logo'  src="assets/social/thought.png">  </p>  </p>
+          <p>every year I found myself increasingly drawn to the "other side" of my industry: the technology that was powering the financial databases and news terminals <img class='bio-logo'  src="assets/social/finsmall.png"> .
+          <p>So I rolled up my (mental) sleeves, stalked all kinds of tech meetups, and started down the road to coding <img class='bio-logo'  src="assets/social/jscodesmall.png"> .
+          <p>The most important lesson: Learning to code is HARD -- and such a joy! Over the past few years I've learned JavaScript <img class='bio-logo'  src="assets/social/icon8js.svg">, including React.js<img class='bio-logo'  src="assets/social/react.png">, Node.js<img class='bio-logo'  src="assets/social/node.png">, Express.js; Git and GitHub <img class='bio-logo' src="assets/social/jscodesmall.png"> ; HTML5 <img class='bio-logo' src="assets/social/html5.png"> and CSS <img class='bio-logo' src="assets/social/css3.png"> ; SQL <img class='bio-logo' src="assets/social/SQL.png"> and Python <img class='bio-logo' src="assets/social/python.png"> .
+          So much to learn, so little time! </p>
         </div>
-      </div>
-    </section>
+
+        <div class="contact">
+          <h2>Contact Information</h2>
+            <strong>Email:</strong> <a href="mailto:mf212mf@gmail.com">Say Hi!</a>
+              <br />
+            <strong>Phone:</strong> <a href="tel:6463203548"> 646 320 3548</a>
+            <br />
+      </section>
+
+      <section id = 'projects'>
+        <div class="row" id="projects">
+                    <!--   <div class="col s12 m4">
+                    <div class="card">
+                    <div class="card-image">
+                    <img src="https://res.cloudinary.com/jkeohan/image/upload/v1560709227/mars-landing_eh42f9.jpg">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section id = 'journalism'>
+        <div class="row" id="clips">
+        </div>
+      </section>
+    </div>
 
 
-    <section id = 'journalism'>
-    </section>
-
-
-
-
-  </div>
-
-
-    	<footer>
-    		<p>&copy; 2019 Marie-France Han</p>
-    	</footer>
+    <footer>
+      <p>&copy; 2019 Marie-France Han</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</body>
-</html>
+  </body>
+  </html>
