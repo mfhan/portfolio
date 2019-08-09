@@ -2,17 +2,18 @@ const kantDos= [
   'Beat Martha Stewart at a Turkey Cook-Off',
   'Fix your washer-dryer (sorry!)',
   '"Run Right Into Hell And Back"',
-  '"Catch a grenade for you"',
+  '"Catch A Grenade For You"',
   'Sing Cosette\'s part in Les Miserables',
   'Manage the New York Mets\' relief pitching staff',
   'Make macarons',
-  'Pass up an opportunity to explain why "Its" and "It\'s" are NOT THE SAME',
+  'Pass up an opportunity to explain why "Its" and "It\'s" are NOT THE SAME, no they are not',
   'Become an Instagram influencer',
   'Fold a fitted sheet',
   'Direct traffic around Times Square',
   'Explain the infield fly rule in baseball',
   'Toss pizza dough in the air',
-  'Understand everything immediately',
+  'Live in a tiny house',
+  'Collect all six Infinity Stones',
   'Beat a 6-year-old at chess',
   'Make your cat cuddle with you',
   'Rewrite the ending of Game of Thrones (or maybe I can?)'
@@ -28,7 +29,6 @@ const canDos = [
   'Write code that\'s clear, concise and scalable',
   'Explain my code in an engaging way',
   'Build and grow tech communities via Meetups',
-  'Speak to any audience with the aim of reaching everyone',
   'Fully use my journalism background in the service of code',
   'Make use of my Scrum Master(TM) certification to ensure Agile workflows',
   'Help engineers explain their code',
@@ -67,6 +67,7 @@ const kantElements = kantList.map((element) => {
   //console.log(element)
   const li = document.createElement('li');
   li.classList.add('kantdo')
+  // li.classList.add('kantscript')
   li.innerText = element
   // we need to style them
   return li;
@@ -92,11 +93,13 @@ function createFunSkill(funCanDos) {
 }
 
 
-// document.addEventListener('submit', generateSkills(canDos, 4))
+document.addEventListener('refreshKant', generateSkills(kantDos, 2))
+
+document.addEventListener('refreshCan', generateSkills(canDos, 4))
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myToggler() {
-  var x = document.getElementById("myTopnav");
+  const x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
@@ -134,7 +137,7 @@ fetch(projectSource)
        }
      })
      console.log('these are my projects', projects)
-     createCards(projects, 'projects')
+     createCards(projects)
 })
 
 
@@ -146,8 +149,7 @@ fetch(newsSource)
        return {
           title: d.gsx$title.$t,
           image: d.gsx$image.$t,
-          description: d.gsx$description.$t,
-          link: d.gsx$links.$t
+          description: d.gsx$description.$t
        }
      })
      console.log('these are my news clips', clips)
@@ -171,6 +173,7 @@ class Card {
 
     const cardImage = document.createElement('div')
     cardImage.classList.add('card-image');
+    // cardImage.classList.add("center");
 
     const image  = document.createElement('img')
     image.setAttribute('src', this.image)
@@ -200,6 +203,7 @@ class CardContent {
     console.log('this is desc', this.desc)
     const cardContent = document.createElement('div')
     cardContent.classList.add('card-content');
+    cardContent.classList.add('center');
 
     const paragraph = document.createElement('p')
     paragraph.innerText = this.desc
@@ -228,10 +232,41 @@ function createNewsCards(clips){
   })
 }
 
+const form = document.querySelector('form');
+const button = document.querySelector('button');
+const firstNameInput = document.querySelector('#firstName');
+const lastNameInput = document.querySelector('#lastName');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#message');
+// Set up empty object
+const contact = {
+  "contactList" : []
+}
+// Callback function
+const addNewContact = (e) => {
+  e.preventDefault()
+  // Variables for the values entered in the form
+  const newName = nameInput.value;
+  const newEmail = emailInput.value;
+  const newSubject = subjectInput.value;
+  const newMessage = messageInput.value;
 
+  // Store the values in a JSON object
+  contactObject = {
+    name: newName,
+    email: newEmail,
+    subject: newSubject,
+    message: newMessage
+  }
+  // Add Object to array
+  contact.contactList.push(contactObject)
+  console.log(contact)
+}
+// Event Handler
+form.addEventListener('submit', addNewContact)
+// Or
+// button.addEventListener('click', addNewContact)
 
-
-//
 // function createNewBlogPost() {
 //     //create a new `<div>` with class of `.blog-post`,
 //     let newDiv = document.createElement('div');
