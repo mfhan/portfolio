@@ -166,7 +166,7 @@ class Card {
 
   render() {
     const col = document.createElement('div')
-    col.classList.add('col','s12','m3');
+    col.classList.add('col');
 
     const card = document.createElement('div')
     card.classList.add('card');

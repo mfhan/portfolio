@@ -20,6 +20,7 @@
       <section class="topnav" id="myTopnav">
         <a href="#home" class="active">Marie-France Han</a>
         <a href="#about">About</a>
+        <a href="#contact">Contact Me</a>
         <a href="#projects">Projects</a>
         <a href="journalism">Media</a>
         <a href="javascript:void(0);" class="icon" onClick="myToggler()">
@@ -32,18 +33,26 @@
     <section id='skills'>
       <div class ='kant'>
         <h3 class = 'kantscript'>A Few Things I Can't Do:</h3>
-        <ul class = 'kantdo'>
-        </ul>
-        <!-- <h5><button id="refreshKant" type="submit">Repeat</button></h5> -->
+          <div class ='listicle'>
+          <ul class = 'kantdo'>
+          </ul>
+        </div>
+       <div class = 'list-button'>
+          <h5><button id="refreshKant" type="submit">Repeat</button></h5>
+       </div>
       </div>
 
 
       <div class ='can'>
         <h3 class = 'canscript'>...And Lots of Things I CAN DO!</h3>
-        <ul class = 'cando'>
-        </ul>
-        <!-- <h5><button id="refreshCan" type="submit">Repeat</button></h5> -->
-      </div>
+          <div class ='listicle'>
+            <ul class = 'cando'>
+            </ul>
+          </div>
+          <div class = 'list-button'>
+           <h5><button id="refreshCan" type="submit">Repeat</button></h5>
+          </div>
+          </div>
     </section>
 
 
@@ -62,27 +71,25 @@
         <h3  >About Me:</h3>
           <p  class = 'subhead'> I was born in France <img class='bio-logo' src="assets/social/tricolore.png">, spent my childhood in Africa <img class = 'bio-logo' src="assets/social/ivory.png">  <img class = 'bio-logo' src="assets/social/tunisia.png"> <img class = 'bio-logo' src= "assets/social/morocco.png"> <img class = 'bio-logo' src="assets/social/cameroon.png"> , went to college in Paris <img class='bio-logo' src = "assets/social/eiffel.png" >, then got a job at the United Nations <img class='bio-logo'  src="assets/social/un_logo.png"> in New York and finally made my way to Columbia <img class='bio-logo'  src="assets/social/columbia.png"> journalism school. </p>
           <p class="subhead"> For many years, my world was all about the news: I was a technology reporter at Reuters<img class='bio-logo'  src="assets/social/reutersmini.png">, then a news editor at Bloomberg <img class='bio-logo'  src="assets/social/bloomberg.png"> in New York, breaking news on Samsung and editing stories about Vladimir Putin's <img class='bio-logo'  src="assets/social/angryputin.png"> billionaire friends. </p>
-          <p > But... <img class='bio-logo'  src="assets/social/thought.png">  ... <img class='bio-logo'  src="assets/social/thought.png">... <img class='bio-logo'  src="assets/social/thought.png">  </p>
-          <p class="subhead">Every year I found myself more intrigued by the "other side" of journalism: the technology that was powering the financial databases  <img class='bio-logo'  src="assets/social/mktgrow.png"> and news terminals <img class='bio-logo'  src="assets/social/mktgraph.png">. So I rolled up my (mental) sleeves and started down the road to <strong>coding</strong> <img class='bio-logo'  src="assets/social/jscodesmall.png"> .</p>
+          <p > But... <img class='bio-logo'  src="assets/social/thought.png">  ... <img class='bio-logo'  src="assets/social/thought.png">... <img class='bio-logo'  src="assets/social/thought.png">  Every year I found myself more intrigued by the "other side" of journalism: the technology that was powering the financial databases  <img class='bio-logo'  src="assets/social/mktgrow.png"> and news terminals <img class='bio-logo'  src="assets/social/mktgraph.png">. So I rolled up my (mental) sleeves and started down the road to <strong>coding</strong> <img class='bio-logo'  src="assets/social/jscodesmall.png"> .</p>
           <p class="subhead">Learning to code is <strong>HARD</strong> -- and such a joy at the same time! Over the past few years I've learned to work with <strong>JavaScript</strong> including <strong>React.js</strong> <img class='bio-logo'  src="assets/social/react.png"> and <strong>Node.js</strong> <img class='bio-logo'  src="assets/social/node.png">; Git and GitHub <img class='bio-logo' src="assets/social/GitHub.png">;  <strong> HTML5 </strong> <img class='bio-logo' src="assets/social/html5.png"> and CSS <img class='bio-logo' src="assets/social/css3.png"> ; SQL <img class='bio-logo' src="assets/social/SQL.png"> and <strong>Python</strong> <img class='bio-logo' src="assets/social/python.png"> .
           So much to learn, so little time! </p>
         </div>
 
-        <div class="contact">
-          <!-- <h3>Get In Touch:</h3> -->
-            <p class="contact"><strong>Email:</strong> <a href="mailto:mf212mf@gmail.com?subject=Mail from Our Site&body=Body-goes-here" target="_blank" >mf212mf@gmail.com</a>
-            </p>
+        <div id="contact">
+          <p class="contact"><strong>Email me:</strong> <a href="mailto:mf212mf@gmail.com?subject=Mail from Our Site&body=Body-goes-here" target="_blank" >mf212mf@gmail.com</a>
+          </p>
 
-            <form class="container">
-              <h3 id="CTA">Get In Touch</h3>
-              <input id="firstName" type="text" placeholder="First Name">
-              <input id="lastName" type="text" placeholder="Last Name">
-              <input id="email" type="text" placeholder="Email">
-              <textarea id="message" type="text" placeholder="Message"></textarea>
-              <button id="submit" type="submit">Submit</button>
-            </form>
-            <p class="contact"><strong>Phone:</strong> <a href="tel:6463203548"> 646 320 3548</a>
-            </p>
+          <form class="container">
+            <h4 id="CTA">Get In Touch</h4>
+            <input id="firstName" type="text" placeholder="First Name">
+            <input id="lastName" type="text" placeholder="Last Name">
+            <input id="email" type="text" placeholder="Email">
+            <textarea id="message" type="text" placeholder="Message"></textarea>
+            <button id="submit" type="submit">Submit</button>
+          </form>
+          <p class="contact"><strong>Phone:</strong> <a href="tel:6463203548"> 646 320 3548</a>
+          </p>
         </div>
       </section>
 
@@ -91,7 +98,9 @@
         <h3>Coding Projects</h3>
         <p></p>
         <div class="row" id="projects">
+          <div class ="col">
 
+          </div>
         </div>
       </div>
       </section>

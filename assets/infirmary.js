@@ -81,3 +81,32 @@
 // }
 // createNewBlogPost()
 //
+
+
+.row {
+  display:flex;
+  flex-wrap: wrap;
+  border:1px solid;
+}
+
+.card {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  margin:0 !important;
+
+}
+
+.card .card-title {
+  text-align:center;
+}
+
+.card .card-image {
+/*     border:3px solid green; */
+}
+
+.card .card-image img {
+  height:180px;
+  object-fit:cover;
+}

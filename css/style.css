@@ -93,6 +93,17 @@ h5{
   color: white;
 }
 
+.listicle{
+  text-align: left;
+}
+
+.list-button{
+  /* text-align:right; */
+  float: right;
+  /* padding: 10px;
+  margin: 10px; */
+}
+
 .kant {
   /* display: inline-block; */
   background-color: #ffff00;
@@ -111,12 +122,6 @@ h5{
   padding-top: 2px;
   font-size: 16px;
   color: black;
-  /* background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-/* background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-/* background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); */
-  /* background-image: linear-gradient(top, rgba(255,255,255,.2), rgba(255,255,255,0.5));  */
-  /* background: linear-gradient(bottom, rgba(0,0,0,.3), rgba(0,0,0,.2));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,.3), rgba(0,0,0,.2)); */
 }
 
 #refreshKant{
@@ -196,7 +201,7 @@ h5{
   initial-letter: 3;
 }
 
-.contact{
+#contact{
   display: inline;
   /* flex-direction: row; */
   margin: 10px 20px 10px 0px;
@@ -206,7 +211,7 @@ h5{
 
   #CTA{
     display: block;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     color: rgba(178, 178, 178, 1)
   }
@@ -233,11 +238,10 @@ h5{
   textarea {
     color: rgb(171, 171, 171);
     height: 100px;
-    width: 400px;
+    min-width: 200px;
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
-    border: none;
   }
 
   #submit{
@@ -253,13 +257,17 @@ h5{
   }
 }
 
+.col{
+  display:inline-block;
+}
 
+
+/*
 .grid {
   display: grid;
-  grid-template-columns: 150px auto 150px;
   grid-template-rows: repeat(3, 100px);
   grid-gap: 1em;
-}
+} */
 
 #projects{
   margin: 10px 0px 10px 0px;
@@ -287,14 +295,22 @@ h5{
   flex-wrap: wrap;
   border:1px black solid 80%;
 }
-
+/*
 .card {
      display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     margin:10px;
+} */
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
 }
+
+
 
 .card .card-title {
    font-size: 20px;
@@ -303,6 +319,7 @@ h5{
 
 .card .card-image {
   border:1px solid grey;
+  object-fit: cover;
 /*     border:3px solid green; */
 }
 
