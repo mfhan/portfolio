@@ -67,6 +67,18 @@ body {
   display: none;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 /* #skills{
   background-image: url('../assets/2014Gaillard1.jpg');
   /* url("../assets/rabatcat.jpg"); */
@@ -112,6 +124,7 @@ h5{
 
 .kant {
   /* display: inline-block; */
+  float: center;
   background-color: #ffff00;
   border: 5px solid #ee3e80;
   border-radius: 10px;
@@ -144,8 +157,10 @@ h5{
 
 .can {
   /* display: inline-block; */
+  float: center;
   background-color: #0066cc;
   border: 5px solid #ff4d88;
+  border-style: dashed;
   border-radius: 10px;
   padding: 10px 2% 5px 2%;
   margin-top: 5px;

@@ -15,25 +15,24 @@ const kantDos= [
   'Live in a tiny house',
   'Collect all six Infinity Stones',
   'Beat a 6-year-old at chess',
-  'Make your cat cuddle with you',
+  'Persuade your cat not to wake you up at 5 am',
   'Rewrite the ending of Game of Thrones (or maybe I can?)'
 ]
 
 const canDos = [
-  'Analyze and solve problems',
-  'Use React.js to build fun apps',
-  'Actively listen to product owners and UX designers',
-  'Communicate with tech teams',
-  'Write amazing technical documentation',
-  'Clearly set technical expectations and deliverables',
-  'Write code that\'s clear, concise and scalable',
-  'Explain my code in an engaging way',
-  'Build and grow tech communities via Meetups',
-  'Fully use my journalism background in the service of code',
-  'Make use of my Scrum Master(TM) certification to ensure Agile workflows',
-  'Help engineers explain their code',
-  'Help non-coders understand what code does',
-  'Use an API to populate this portfolio site',
+  'Analyze and solve problems!',
+  'Use React.js to build fun apps!',
+  'Actively listen to product owners and UX designers!',
+  'Communicate effectively with tech teams!',
+  'Write amazing technical documentation!',
+  'Clearly set technical expectations and deliverables!',
+  'Write code that\'s clear, concise and scalable!',
+  'Build and grow tech communities via Meetups!',
+  // 'Fully use my journalism background in the service of code',
+  'Make use of my Scrum Master(TM) certification to help with workflows!',
+  'Help engineers write and deliver tech talks!',
+  'Help non-coders understand what code does!',
+  'Use an API to populate this portfolio site!',
 ]
 
 const funCanDos = [
@@ -91,6 +90,22 @@ function createFunSkill(funCanDos) {
   funSkill = (funCanDos.splice(Math.floor(Math.random() *deck.length), 1))[0]
   return funSkill
 }
+
+
+window.onscroll = function() {mySticky()};
+const navBar = document.querySelector(".topnav");
+// Get the offset position of the navbar
+const sticky = navBar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function mySticky() {
+  if (window.pageYOffset >= sticky) {
+    navBar.classList.add("sticky")
+  } else {
+    navBar.classList.remove("sticky");
+  }
+}
+
 
 
 document.addEventListener('refreshKant', generateSkills(kantDos, 2))
