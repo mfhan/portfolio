@@ -30,12 +30,13 @@ body {
 
 .header{
   color: white;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: black;
+  opacity: 0.8;
   max-width: 800px;
   overflow: hidden;
   margin-bottom: 0;
@@ -59,15 +60,15 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: red;
   /* max-width: 800px; */
-  color: grey;
+  color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
   /* max-width: 800px; */
-  background-color: tomato;
+  background-color: red;
   color: white;
 }
 
@@ -230,7 +231,8 @@ h5{
 .bio{
   display:inline-block;
   margin-top: 15px;
-  /* width: 80%; */
+  margin-right:30px;
+  max-width: 950px;
 }
 
 .subhead::first-letter {
@@ -238,7 +240,7 @@ h5{
 }
 
 .contact{
-  display: inline;
+  display: block;
   /* flex-direction: row; */
   margin: 10px 20px 10px 0px;
   /* text-align: center; */
@@ -310,6 +312,13 @@ form.container {
   margin: auto;
 
 }
+
+#media{
+  width: 100%;
+  margin: auto;
+
+}
+
 
 /* #clips{
   margin: 20px 0px 10px 0px;
