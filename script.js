@@ -1,16 +1,16 @@
 const kantDos= [
-  'Beat Martha Stewart at a Turkey Cook-Off',
+  'Beat Martha Stewart at a turkey cook-Off',
   'Fix your washer-dryer (sorry!)',
   '"Run Right Into Hell And Back"',
   '"Catch A Grenade For You"',
   'Sing Cosette\'s part in Les Miserables',
   'Manage the New York Mets\' relief pitching staff',
-  'Make macarons',
+  'Plan, cook and freeze a week\'s worth of meals every Sunday',
   'Pass up an opportunity to explain why "Its" and "It\'s" are NOT THE SAME, no they are not',
   'Become an Instagram influencer',
   'Fold a fitted sheet',
   'Direct traffic around Times Square',
-  'Explain the infield fly rule in baseball',
+  'Explain baseball\'s infield fly rule',
   'Toss pizza dough in the air',
   'Live in a tiny house',
   'Collect all six Infinity Stones',
@@ -27,10 +27,9 @@ const canDos = [
   'Write amazing technical documentation!',
   'Clearly set technical expectations and deliverables!',
   'Write code that\'s clear, concise and scalable!',
-  'Build and grow tech communities via Meetups!',
-  // 'Fully use my journalism background in the service of code',
+  'Build and grow tech communities via Meetups and social media!',
   'Make use of my Scrum Master(TM) certification to help with workflows!',
-  'Help engineers write and deliver tech talks!',
+  'Help engineers outline, structure and deliver tech talks!',
   'Help non-coders understand what code does!',
   'Use an API to populate this portfolio site!',
 ]
@@ -93,7 +92,7 @@ function createFunSkill(funCanDos) {
 
 
 window.onscroll = function() {mySticky()};
-const navBar = document.querySelector(".topnav");
+const navBar = document.querySelector('.topnav');
 // Get the offset position of the navbar
 const sticky = navBar.offsetTop;
 
@@ -106,11 +105,8 @@ function mySticky() {
   }
 }
 
-
-
-document.addEventListener('refreshKant', generateSkills(kantDos, 2))
-
-document.addEventListener('refreshCan', generateSkills(canDos, 4))
+// document.addEventListener('refreshKant', generateSkills(kantDos, 2))
+// document.addEventListener('refreshCan', generateSkills(canDos, 4))
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myToggler() {

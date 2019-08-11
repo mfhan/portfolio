@@ -14,13 +14,14 @@ body {
 .container{
   width: 100%;
   margin-top: 10px;
+  /* margin-left: 20px; */
   margin-bottom: 10px;
 }
 
- section{
+ /* section{
   margin-top: 10px;
   margin-bottom: 10px;
-}
+} */
 /*
 .hero-image{
   background: url('assets/2014Amiens1.jpg');
@@ -33,42 +34,49 @@ body {
   /* opacity: 0.9; */
 }
 
+.content{
+  display: inline-block;
+  /* flex-direction: row; */
+  padding-top: 20px;
+  margin-left: 20px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: black;
   opacity: 0.8;
   max-width: 800px;
   overflow: hidden;
-  margin-bottom: 0;
+  float: center;
+  /* margin-bottom: 10px; */
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  /* float: center; */
   display: inline-block;
   max-width: 800px;
   color: #f2f2f2;
+  opacity: 0.8;
+  float: center;
   text-align: center;
-  padding: 10px 10px;
+  padding: 10px 10px 10px 10px;
   text-decoration: none;
   font-size: 16px;
 }
 
-.content{
-  padding: 16px;
-}
+
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: red;
-  /* max-width: 800px; */
+  opacity: 0.8;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  /* max-width: 800px; */
   background-color: red;
+  opacity: 0.8;
   color: white;
 }
 
@@ -80,25 +88,28 @@ body {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
+  /* padding-bottom: 10px; */
+  /* padding-top: 10px; */
   top: 0;
+  left: 0;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 20px;
+  /* margin-top: 10px; */
+  padding-top: 0px;
 }
 
-/* #skills{
-  background-image: url('../assets/2014Gaillard1.jpg');
-  /* url("../assets/rabatcat.jpg"); */
-  /* background-size: cover; */
-  /* height: 50vh; */
+#skills{
+  margin-top: 30px;
+  text-align: center;
+}
 
 h3{
   /* display: flex;
   text-align: center; */
   display: inline;
-  font-size: 24px;
+  font-size: 28px;
   /* color: rgba(255,255,255,1); */
   width: auto;
   margin-right: 10px;
@@ -121,7 +132,7 @@ h5{
 }
 
 .listicle{
-  text-align: left;
+  /* text-align: center; */
 }
 
 .list-button{
@@ -138,7 +149,7 @@ h5{
   border: 5px solid #ee3e80;
   border-radius: 10px;
   padding: 20px 2% 5px 2%;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 5px;
   /* background: -webkit-linear-gradient(rgba(255,255,255,.7) 0%, rgba(255,255,255,.4) 100%);
   background: -o-linear-gradient(rgba(255,255,255,.7) 0%, rgba(255,255,255,.4) 100%);
@@ -172,7 +183,7 @@ h5{
   border-style: dashed;
   border-radius: 10px;
   padding: 10px 2% 5px 2%;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 5px;
   /* background: linear-gradient(bottom, rgba(0,0,0,.3), rgba(0,0,0,.1));
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,.3), rgba(0,0,0,.1)); */
@@ -200,7 +211,15 @@ h5{
   padding: 10px;
 }
 
+#about{
+  margin-top: 30px;
+  padding-top: 30px;
+}
 
+#contactme{
+  margin-top: 30px;
+  padding-top: 30px;
+}
 .social{
   display:inline;
     /* flex-wrap: space-between; */
@@ -309,12 +328,16 @@ form.container {
 
 #samples{
   width: 100%;
+  margin-top: 30px;
+  margin-left: 20px;
   margin: auto;
 
 }
 
 #media{
   width: 100%;
+  margin-top: 30px;
+  margin-left: 20px;
   margin: auto;
 
 }
