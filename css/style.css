@@ -11,6 +11,12 @@ body {
   height: 100vh;
 }
 
+.container{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
  section{
   margin-top: 10px;
   margin-bottom: 10px;
@@ -39,9 +45,9 @@ body {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 /* Change the color of links on hover */
@@ -208,21 +214,21 @@ h5{
   /* text-align: center; */
 }
 
-
-  #CTA{
+#CTA{
     display: block;
     font-size: 20px;
     text-align: center;
     color: rgba(178, 178, 178, 1)
-  }
+}
 
-  form.container {
+form.container {
     background-color: rgba(241, 241, 241, 1);
     display:inline-block;
-    /* display: flex;
-    flex-direction: row; */
-    padding: 10px;
-    margin: 5px;
+    justify: center;
+    float: center;
+    max-width: 800px;
+    padding: 5px 5px 5px 5px;
+    /* margin: 5px; */
   }
 
   input {
@@ -239,8 +245,8 @@ h5{
     color: rgb(171, 171, 171);
     height: 100px;
     min-width: 200px;
-    margin: 5px;
-    padding: 10px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
     border-radius: 5px;
   }
 
@@ -256,10 +262,10 @@ h5{
     padding: 10px;
   }
 }
-
+/*
 .col{
   display:inline-block;
-}
+} */
 
 
 /*
@@ -269,57 +275,63 @@ h5{
   grid-gap: 1em;
 } */
 
-#projects{
-  margin: 10px 0px 10px 0px;
-
-}
-
-#clips{
-  margin: 20px 0px 10px 0px;
-}
-
-.container-fluid{
+#samples{
   width: 100%;
+  margin: auto;
+
 }
 
-.center {
-  /* display: block; */
+/* #clips{
+  margin: 20px 0px 10px 0px;
+} */
+
+/* .container-fluid{
+  width: 100%;
+} */
+
+/* .center {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-
-.row {
-  display:flex;
-  flex-wrap: wrap;
-  border:1px black solid 80%;
-}
-/*
-.card {
-     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    margin:10px;
 } */
 
-.card{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 30px;
+
+* {
+  box-sizing: border-box;
 }
 
+.row {
+  /* justify-content: space-between; */
+/*   display:flex; */
+/*   flex-wrap: wrap; */
+  padding: 2px;
+  border:1px dotted;
+}
 
+.row  .col {
+  width: 20%;
+  max-height: 600px;
+  margin: 5px 2px 5px 2px;
+  /* border: 1px solid green; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 225px;
+    max-width: 300px;
+    height: 100%;
+    margin: 5px 2px 5px 2px;
+
+}
 
 .card .card-title {
-   font-size: 20px;
   text-align:center;
 }
 
 .card .card-image {
-  border:1px solid grey;
-  object-fit: cover;
 /*     border:3px solid green; */
 }
 
@@ -329,18 +341,90 @@ h5{
 }
 
 
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container > h1 {
+  font-family: 'Montserrat', impact;
+  font-weight: 800;
+  font-size: 2.5em;
+  margin-top: -1%;
+  color: #4caaa8;
+  text-shadow: 1px 1px #f2cd99;
+  letter-spacing: 2px;
+} */
+
+
+.container > img {
+  width: 50%;
+}
+
+.carousel-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.carousel-images {
+  width: 80%;
+      height: 300px;
+/*   background: #fa8d8e; */
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+/*   box-shadow: 2px 2px #f2cd99; */
+}
+.carousel-images img {
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+      height: 100%;
+    object-fit: cover;
+}
+.carousel-images img:first-of-type {
+  display: block;
+}
+.carousel-button {
+  align-self: center;
+  background: #f2cd99;
+  color: #888;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px #fa8d8e;
+}
+.carousel-button:hover {
+  cursor: pointer;
+  background: #fa8d8e;
+  box-shadow: 1px 1px #f2cd99;
+  color: white;
+}
+
+
+
 
 button {
   margin: 10px 10px 10px 10px;
   background-color: yellow;
 }
 
-
   footer {
     text-align: left;
     padding: 20px 30px 20px 30px;
   }
 
+
+
+  @media (max-width: 400px) {
+    .row {
+      display: block;
+      .card {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
