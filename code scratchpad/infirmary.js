@@ -111,7 +111,14 @@
   object-fit:cover;
 }
 
+// document.addEventListener('refreshKant', generateSkills(kantDos, 2))
+// document.addEventListener('refreshCan', generateSkills(canDos, 4))
 
+let funSkill = ''
+function createFunSkill(funCanDos) {
+  funSkill = (funCanDos.splice(Math.floor(Math.random() *deck.length), 1))[0]
+  return funSkill
+}
 
 // function createNewBlogPost() {
 //     //create a new `<div>` with class of `.blog-post`,

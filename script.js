@@ -5,7 +5,7 @@ const kantDos= [
   '"Catch A Grenade For You"',
   'Sing Cosette\'s part in Les Miserables',
   'Manage the New York Mets\' relief pitching staff',
-  'Plan, cook and freeze a week\'s worth of meals every Sunday',
+  // 'Plan, cook and freeze a week\'s worth of meals every Sunday',
   'Pass up an opportunity to explain why "Its" and "It\'s" are NOT THE SAME, no they are not',
   // 'Become an Instagram influencer',
   'Tell you when L train service will return to normal',
@@ -22,7 +22,7 @@ const kantDos= [
 
 const canDos = [
   // 'Analyze and solve problems!',
-  'Use React.js to build fun apps!',
+  'Work with React.js to build fun apps!',
   'Actively listen to product owners and UX designers!',
   'Communicate effectively with tech teams!',
   'Write clear and intuitive technical documentation!',
@@ -32,7 +32,7 @@ const canDos = [
   'Make use of my Scrum Master(TM) certification to optimize workflows!',
   'Help engineers outline, structure and deliver tech talks!',
   'Help non-coders understand what code does!',
-  'Use an API to populate this portfolio site!',
+  'Make API calls to populate this portfolio site!',
 ]
 
 const funCanDos = [
@@ -85,12 +85,8 @@ canDoList.forEach((element) => {
   // return element
 })
 
-let funSkill = ''
-function createFunSkill(funCanDos) {
-  funSkill = (funCanDos.splice(Math.floor(Math.random() *deck.length), 1))[0]
-  return funSkill
-}
 
+// Scrolling nav bar
 
 window.onscroll = function() {mySticky()};
 const navBar = document.querySelector('.topnav');
@@ -106,8 +102,7 @@ function mySticky() {
   }
 }
 
-// document.addEventListener('refreshKant', generateSkills(kantDos, 2))
-// document.addEventListener('refreshCan', generateSkills(canDos, 4))
+
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myToggler() {
