@@ -1,21 +1,22 @@
 const kantDos= [
   'Beat Martha Stewart at a turkey cook-Off',
   'Fix your washer-dryer (sorry!)',
-  '"Run Right Into Hell And Back"',
+  // '"Run Right Into Hell And Back"',
   '"Catch A Grenade For You"',
   'Sing Cosette\'s part in Les Miserables',
   'Manage the New York Mets\' relief pitching staff',
   'Plan, cook and freeze a week\'s worth of meals every Sunday',
   'Pass up an opportunity to explain why "Its" and "It\'s" are NOT THE SAME, no they are not',
-  'Become an Instagram influencer',
+  // 'Become an Instagram influencer',
+  'Tell you when L train service will return to normal',
   'Fold a fitted sheet for the life of me',
   'Direct traffic around Times Square',
   'Explain baseball\'s infield fly rule',
   'Toss pizza dough in the air',
-  'Live in a tiny house',
+  // 'Live in a tiny house',
   'Collect all six Infinity Stones',
   'Beat a 6-year-old at chess',
-  'Persuade your cat not to wake you up at 5 am',
+  // 'Convince your cat not to wake you up at 5 am',
   'Re-shoot the ending of Game of Thrones'
 ]
 

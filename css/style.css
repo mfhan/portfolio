@@ -39,6 +39,7 @@ body {
   /* flex-direction: row; */
   padding-top: 20px;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Add a black background color to the top navigation */
@@ -108,6 +109,7 @@ body {
 h3{
   /* display: flex;
   text-align: center; */
+  padding-top: 15px;
   display: inline;
   font-size: 28px;
   /* color: rgba(255,255,255,1); */
@@ -249,20 +251,23 @@ h5{
 
 
 .bio{
-  display:inline-block;
+  display:block;
   margin-left: 30px;
   margin-top: 15px;
-
+  margin-bottom: 15px;
   max-width: 800px;
 }
 
 li{
   font-size: 18px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
+
+
 
 .subhead::first-letter {
   initial-letter: 3;
+  margin-top: 15px;
 }
 
 .contact{
@@ -343,6 +348,9 @@ form.container {
   /* margin: auto; */
 /* } */
 
+.samples{
+  margin-top: 20px;
+}
 
 #projects{
   width: 95%;
