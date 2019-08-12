@@ -110,3 +110,25 @@
   height:180px;
   object-fit:cover;
 }
+
+
+
+// function createNewBlogPost() {
+//     //create a new `<div>` with class of `.blog-post`,
+//     let newDiv = document.createElement('div');
+//     //console.log(newDiv)
+//     newDiv.classList.add("blog-post")
+//     newDiv.classList.add('purple')
+//     //a new `<h2>` with text, ===ACTUALLY AN H1
+//     let newHeader = document.createElement('h1');
+//     newHeader.innerText='Paris'
+//     //and a new `<p>` with some text.
+//     let newPara = document.createElement('p')
+//     newPara.innerText = 'I FLEW OVER THE CHAMPS ELYSEES!'
+//     newDiv.appendChild(newHeader)
+//     newDiv.appendChild(newPara)
+//     let newMain = document.querySelector('.main').appendChild(newDiv)
+//     console.log(newMain)
+// }
+// createNewBlogPost()
+//

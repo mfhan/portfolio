@@ -8,7 +8,7 @@ const kantDos= [
   'Plan, cook and freeze a week\'s worth of meals every Sunday',
   'Pass up an opportunity to explain why "Its" and "It\'s" are NOT THE SAME, no they are not',
   'Become an Instagram influencer',
-  'Fold a fitted sheet',
+  'Fold a fitted sheet for the life of me',
   'Direct traffic around Times Square',
   'Explain baseball\'s infield fly rule',
   'Toss pizza dough in the air',
@@ -16,19 +16,19 @@ const kantDos= [
   'Collect all six Infinity Stones',
   'Beat a 6-year-old at chess',
   'Persuade your cat not to wake you up at 5 am',
-  'Rewrite the ending of Game of Thrones (or maybe I can?)'
+  'Re-shoot the ending of Game of Thrones'
 ]
 
 const canDos = [
-  'Analyze and solve problems!',
+  // 'Analyze and solve problems!',
   'Use React.js to build fun apps!',
   'Actively listen to product owners and UX designers!',
   'Communicate effectively with tech teams!',
-  'Write amazing technical documentation!',
+  'Write clear and intuitive technical documentation!',
   'Clearly set technical expectations and deliverables!',
   'Write code that\'s clear, concise and scalable!',
-  'Build and grow tech communities via Meetups and social media!',
-  'Make use of my Scrum Master(TM) certification to help with workflows!',
+  'Build and grow tech communities via Meetup and social media!',
+  'Make use of my Scrum Master(TM) certification to optimize workflows!',
   'Help engineers outline, structure and deliver tech talks!',
   'Help non-coders understand what code does!',
   'Use an API to populate this portfolio site!',
@@ -117,6 +117,8 @@ function myToggler() {
     x.className = "topnav";
   }
 }
+
+// functions fed by API and rendering into the projects and media sections:
 
 let myProjectsUrl= 'https://docs.google.com/spreadsheets/d/1JzfzPc5KeR3h1kXCp99eI-UnpKKCUpxx1rDDnS3wFsE/edit#gid=0'
 
@@ -253,12 +255,16 @@ function createNewsCards(clips){
   })
 }
 
+
+// Contact form scripts:
+
 const form = document.querySelector('form');
 const button = document.querySelector('button');
 const firstNameInput = document.querySelector('#firstName');
 const lastNameInput = document.querySelector('#lastName');
 const emailInput = document.querySelector('#email');
 const messageInput = document.querySelector('#message');
+
 // Set up empty object
 const contact = {
   "contactList" : []
@@ -267,16 +273,16 @@ const contact = {
 const addNewContact = (e) => {
   e.preventDefault()
   // Variables for the values entered in the form
-  const newName = nameInput.value;
+  const newFirstName = firstNameInput.value;
+  const newLastName = lastNameInput.value;
   const newEmail = emailInput.value;
-  const newSubject = subjectInput.value;
   const newMessage = messageInput.value;
 
   // Store the values in a JSON object
   contactObject = {
-    name: newName,
+    firstName: newFirstName,
+    lastName:newLastName,
     email: newEmail,
-    subject: newSubject,
     message: newMessage
   }
   // Add Object to array
@@ -287,23 +293,3 @@ const addNewContact = (e) => {
 form.addEventListener('submit', addNewContact)
 // Or
 // button.addEventListener('click', addNewContact)
-
-// function createNewBlogPost() {
-//     //create a new `<div>` with class of `.blog-post`,
-//     let newDiv = document.createElement('div');
-//     //console.log(newDiv)
-//     newDiv.classList.add("blog-post")
-//     newDiv.classList.add('purple')
-//     //a new `<h2>` with text, ===ACTUALLY AN H1
-//     let newHeader = document.createElement('h1');
-//     newHeader.innerText='Paris'
-//     //and a new `<p>` with some text.
-//     let newPara = document.createElement('p')
-//     newPara.innerText = 'I FLEW OVER THE CHAMPS ELYSEES!'
-//     newDiv.appendChild(newHeader)
-//     newDiv.appendChild(newPara)
-//     let newMain = document.querySelector('.main').appendChild(newDiv)
-//     console.log(newMain)
-// }
-// createNewBlogPost()
-//
