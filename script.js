@@ -1,22 +1,20 @@
-const kantDos= [
+const kantDos = [
   'Beat Martha Stewart at a turkey cook-Off',
   'Fix your washer-dryer (sorry!)',
-  // '"Run Right Into Hell And Back"',
   '"Catch A Grenade For You"',
   'Sing Cosette\'s part in Les Miserables',
   'Manage the New York Mets\' relief pitching staff',
-  // 'Plan, cook and freeze a week\'s worth of meals every Sunday',
-  'Pass up an opportunity to explain why "Its" and "It\'s" are NOT THE SAME, no they are not',
-  // 'Become an Instagram influencer',
+  // 'Pass up an opportunity to explain why "Its" and "It\'s" are NOT THE SAME, no they are not',
+  'Become an Instagram influencer',
   'Tell you when L train service will return to normal',
   'Fold a fitted sheet for the life of me',
   'Direct traffic around Times Square',
-  'Explain baseball\'s infield fly rule',
+  'Explain the infield fly rule in baseball',
   'Toss pizza dough in the air',
-  // 'Live in a tiny house',
+  'Live in a tiny house',
   'Collect all six Infinity Stones',
   'Beat a 6-year-old at chess',
-  // 'Convince your cat not to wake you up at 5 am',
+  'Convince your cat not to wake you up at 5 am',
   'Re-shoot the ending of Game of Thrones'
 ]
 
@@ -32,7 +30,8 @@ const canDos = [
   'Make use of my Scrum Master(TM) certification to optimize workflows!',
   'Help engineers outline, structure and deliver tech talks!',
   'Help non-coders understand what code does!',
-  'Make API calls to populate this portfolio site!',
+  'Work cross-functionally toward a common goal',
+  //'Make API calls to populate this portfolio site!',
 ]
 
 const funCanDos = [
@@ -44,51 +43,68 @@ const funCanDos = [
   'Make a kicker Dark & Stormy'
 ]
 
-function generateSkills(deck, times){
-  let list = [];
-  for (let i =0; i <=times; i++){
-    let card = (deck.splice(Math.floor(Math.random() *deck.length), 1))[0]
-    //console.log(card)
-    console.log(deck.length)
-    list.push(card);
-  }
-  //console.log(list)
-  return list;
+//separate random number generator into its own function 
+function generateIndex(limit) {
+  let randomArrayIndex = Math.floor(Math.random() * limit)
+  return randomArrayIndex
 }
 
-const canDoList = generateSkills(canDos, 4);
-//console.log(canDoList)
-const kantList = generateSkills(kantDos, 2);
 
+function generateSkills(originalArray, totalItemCount) {
+  let publishedList = [];
+  for (let i = 0; i <= totalItemCount; i++) {
+    let randomIndex = generateIndex(originalArray.length)
+    while (publishedList.includes(originalArray[randomIndex])) {
+      randomIndex = generateIndex(originalArray.length)
+    }
+    //let card = (originalArray.slice(randomIndex, randomIndex + 1))[0]
+    let card = originalArray[randomIndex];
+    console.log("card:", card)
+    console.log("deck.length:", originalArray.length)
+    publishedList.push(card);
+    console.log("list:", publishedList)
+    //return publishedList;
+  }
+  return publishedList;
+}
 
-const kantElements = kantList.map((element) => {
-  // create element as an li
-  //console.log(element)
-  const li = document.createElement('li');
-  li.classList.add('kantdo')
-  // li.classList.add('kantscript')
-  li.innerText = element
-  // we need to style them
-  return li;
-})
+function populateKantList() {
+  const kantList = generateSkills(kantDos, 0); //how many times will the for loop be used  
+  const kantElements = kantList.map((element) => {
+    // create element as an li
+    //console.log(element)
+    const li = document.createElement('li');
+    li.classList.add('kantdo')
+    // li.classList.add('kantscript')
+    li.innerText = element
+    // we need to style them
+    return li;
+  })
 
-kantElements.forEach((element) => document.querySelector('.kantdo').appendChild(element));
+  //before adding new elements, set innerHTML to empty 
+  document.querySelector('.kantdo').innerHTML = "";
+  kantElements.forEach((element) => document.querySelector('.kantdo').appendChild(element));
+}
 
-
-canDoList.forEach((element) => {
-  // create element as an li
-  const li = document.createElement('li');
-  // we need to style them
-  li.classList.add('cando')
-  li.innerText = element
-  document.querySelector('.cando').appendChild(li)
-  // return element
-})
+const populateCanList = () => {
+  const canDoList = generateSkills(canDos, 1);
+  //console.log(canDoList)
+  document.querySelector('.cando').innerHTML = "";
+  canDoList.forEach((element) => {
+    // create element as an li
+    const li = document.createElement('li');
+    // we need to style them
+    li.classList.add('cando')
+    li.innerText = element
+    document.querySelector('.cando').appendChild(li)
+    // return element
+  })
+}
 
 
 // Scrolling nav bar
 
-window.onscroll = function() {mySticky()};
+window.onscroll = function () { mySticky() };
 const navBar = document.querySelector('.topnav');
 // Get the offset position of the navbar
 const sticky = navBar.offsetTop;
@@ -103,7 +119,6 @@ function mySticky() {
 }
 
 
-
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myToggler() {
   const x = document.getElementById("myTopnav");
@@ -116,7 +131,7 @@ function myToggler() {
 
 // functions fed by API and rendering into the projects and media sections:
 
-let myProjectsUrl= 'https://docs.google.com/spreadsheets/d/1JzfzPc5KeR3h1kXCp99eI-UnpKKCUpxx1rDDnS3wFsE/edit#gid=0'
+let myProjectsUrl = 'https://docs.google.com/spreadsheets/d/1JzfzPc5KeR3h1kXCp99eI-UnpKKCUpxx1rDDnS3wFsE/edit#gid=0'
 
 let myNewsUrl = 'https://docs.google.com/spreadsheets/d/1rcUA2TUK1GoSgkCdEzHSnsoO0X8cHwLoARB35rjlQgs/edit#gid=0'
 
@@ -135,37 +150,37 @@ let newsSource = `https://spreadsheets.google.com/feeds/list/${newsId}/od6/publi
 // https://spreadsheets.google.com/feeds/list/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/1/public/values?alt=json
 
 fetch(projectSource)
-  .then( res => res.json())
-  .then( data => {
-     // console.log('this id data.feed.entry', data.feed.entry)
-     let projects = data.feed.entry.map( d => {
-       return {
-          title: d.gsx$title.$t,
-          image: d.gsx$image.$t,
-          description: d.gsx$description.$t,
-          link: d.gsx$link.$t
-       }
-     })
-     // console.log('these are my projects', projects)
-     createCards(projects)
-})
+  .then(res => res.json())
+  .then(data => {
+    // console.log('this id data.feed.entry', data.feed.entry)
+    let projects = data.feed.entry.map(d => {
+      return {
+        title: d.gsx$title.$t,
+        image: d.gsx$image.$t,
+        description: d.gsx$description.$t,
+        link: d.gsx$link.$t
+      }
+    })
+    // console.log('these are my projects', projects)
+    createCards(projects)
+  })
 
 
 fetch(newsSource)
-  .then( res => res.json())
-  .then( data => {
-     // console.log('this id data.feed.entry', data.feed.entry)
-     let clips = data.feed.entry.map( d => {
-       return {
-          title: d.gsx$title.$t,
-          image: d.gsx$image.$t,
-          description: d.gsx$description.$t,
-          link: d.gsx$link.$t
-       }
-     })
-     // console.log('these are my news clips', clips)
-     createNewsCards(clips)
-})
+  .then(res => res.json())
+  .then(data => {
+    // console.log('this id data.feed.entry', data.feed.entry)
+    let clips = data.feed.entry.map(d => {
+      return {
+        title: d.gsx$title.$t,
+        image: d.gsx$image.$t,
+        description: d.gsx$description.$t,
+        link: d.gsx$link.$t
+      }
+    })
+    // console.log('these are my news clips', clips)
+    createNewsCards(clips)
+  })
 
 
 class Card {
@@ -175,13 +190,13 @@ class Card {
     this.description = obj.description
   }
 
-// let rowId =  document.getElementById('row')
+  // let rowId =  document.getElementById('row')
 
   render() {
     //const newRow = document.createElement('div')
     const col = document.createElement('div')
     // col.classList.add('col', 'col-sm-12','col-md-6', 'col-lg-4' );
-    col.classList.add('col','s12','m4');
+    col.classList.add('col', 's12', 'm4');
 
     const card = document.createElement('div')
     card.classList.add('card');
@@ -217,7 +232,7 @@ class CardContent {
   constructor(desc) {
     this.desc = desc
   }
-  render () {
+  render() {
     //console.log('this is desc', this.desc)
     const cardContent = document.createElement('div')
     cardContent.classList.add('card-content');
@@ -231,23 +246,23 @@ class CardContent {
   }
 }
 
-function createCards(projects){
+function createCards(projects) {
   const projectDiv = document.querySelector('#projects')
-    projects.forEach( obj => {
-      let card = new Card(obj)
-      //console.log('this is a project card', card)
-      projectDiv.appendChild(card.render())
-    })
+  projects.forEach(obj => {
+    let card = new Card(obj)
+    //console.log('this is a project card', card)
+    projectDiv.appendChild(card.render())
+  })
 }
 
 
-function createNewsCards(clips){
+function createNewsCards(clips) {
   const clipDiv = document.querySelector('#clips')
-  clips.forEach( obj => {
+  clips.forEach(obj => {
     let card = new Card(obj)
     //console.log('this is a news card', card)
     clipDiv.appendChild(card.render())
-    console.log('clips div',clipDiv)
+    console.log('clips div', clipDiv)
   })
 }
 
@@ -263,7 +278,7 @@ const messageInput = document.querySelector('#message');
 
 // Set up empty object
 const contact = {
-  "contactList" : []
+  "contactList": []
 }
 // Callback function
 const addNewContact = (e) => {
@@ -277,7 +292,7 @@ const addNewContact = (e) => {
   // Store the values in a JSON object
   contactObject = {
     firstName: newFirstName,
-    lastName:newLastName,
+    lastName: newLastName,
     email: newEmail,
     message: newMessage
   }

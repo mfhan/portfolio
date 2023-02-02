@@ -4,7 +4,7 @@ body {
   /* background-color: #F5F5F5; */
   background-color: #ffcc00;
   font-color: black;
-  font-family: 'Lato'  sans-serif;
+  font-family: 'Lato' sans-serif;
   font-size: 100%;
   /* text-align: center; */
   margin: 0 auto;
@@ -18,7 +18,7 @@ body {
   margin-bottom: 10px;
  } */
 
- /* section{
+/* section{
   margin-top: 10px;
   margin-bottom: 10px;
 } */
@@ -29,17 +29,19 @@ body {
   height: 50vh;
 } */
 
-.header{
+.header {
   color: white;
   /* opacity: 0.9; */
 }
 
-.main{
-  display: inline-block;
+.main {
+  margin: auto;
+  width: 70%;
+  /* display: inline-block; */
   /* flex-direction: row; */
   padding-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 
 /* Add a black background color to the top navigation */
@@ -96,17 +98,17 @@ body {
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky+.content {
   /* margin-top: 10px; */
   padding-top: 0px;
 }
 
-#skills{
+#skills {
   margin-top: 30px;
   text-align: center;
 }
 
-h3{
+h3 {
   /* display: flex;
   text-align: center; */
   padding-top: 15px;
@@ -119,25 +121,25 @@ h3{
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,.2)); */
 }
 
-.kantscript{
+.kantscript {
   font-family: "Unkempt";
 }
 
-.canscript{
+.canscript {
   font-family: "Raleway";
   color: white;
 }
 
 
-h5{
+h5 {
   color: white;
 }
 
-.listicle{
+.listicle {
   /* text-align: center; */
 }
 
-.list-button{
+.list-button {
   /* text-align:right; */
   float: right;
   /* padding: 10px;
@@ -158,14 +160,14 @@ h5{
   background: linear-gradient(rgba(255,255,255,.7) 0%, rgba(255,255,255,.4) 100%); */
 }
 
-.kantdo{
+.kantdo {
   margin-top: 2px;
   padding-top: 2px;
   font-size: 16px;
   color: black;
 }
 
-#refreshKant{
+#refreshKant {
   background-color: #d9d9d9;
   /* float: left; */
   /* background-color: rgba(111, 171, 130, 1); */
@@ -192,7 +194,7 @@ h5{
   /* background-color: lightpink; */
 }
 
-.cando{
+.cando {
   margin-top: 2px;
   padding-top: 2px;
   font-size: 16px;
@@ -201,7 +203,7 @@ h5{
   /* text-shadow: 2px 2px 2px white; */
 }
 
-#refreshCan{
+#refreshCan {
   background-color: #d9d9d9;
   /* float: left; */
   /* background-color: rgba(111, 171, 130, 1); */
@@ -213,34 +215,36 @@ h5{
   padding: 10px;
 }
 
-#about{
+#about {
   margin-top: 30px;
   padding-top: 30px;
   /* margin-right:50px; */
 }
 
-#contactme{
+#contactme {
   margin-top: 30px;
   padding-top: 30px;
 }
-.social{
-  display:inline;
-    /* flex-wrap: space-between; */
-    flex-wrap: space-around;
-    text-align: center;
-    margin: 10px 0px 20px 30px;
-    padding: 0px 0px 0px 0px;
-    /* border: 10; */
-  }
 
-.emoji{
+.social {
+  display: inline;
+  /* flex-wrap: space-between; */
+  flex-wrap: space-around;
+  text-align: center;
+  margin: 10px 0px 20px 30px;
+  padding: 0px 0px 0px 0px;
+  /* border: 10; */
+}
+
+.emoji {
   margin: 0px 10px 0px 10px;
 }
-.social-logo{
+
+.social-logo {
   /* display:inline-block; */
-    height: 60px;
-    width: 60px;
-    margin: 0px 5px 0px 0px;
+  height: 60px;
+  width: 60px;
+  margin: 0px 5px 0px 0px;
 }
 
 .bio-logo {
@@ -250,15 +254,15 @@ h5{
 }
 
 
-.bio{
-  display:block;
+.bio {
+  display: block;
   margin-left: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
   max-width: 800px;
 }
 
-li{
+li {
   font-size: 18px;
   margin-top: 5px;
 }
@@ -270,61 +274,62 @@ li{
   margin-top: 15px;
 }
 
-.contact{
+.contact {
   display: block;
   /* flex-direction: row; */
   margin: 10px 20px 10px 0px;
   /* text-align: center; */
 }
 
-#CTA{
-    display: block;
-    font-size: 18px;
-    text-align: center;
-    color: rgba(178, 178, 178, 1)
+#CTA {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  color: rgba(178, 178, 178, 1)
 }
 
 form.container {
-    background-color: rgba(241, 241, 241, 1);
-    display:inline-block;
-    justify: center;
-    float: center;
-    max-width: 800px;
-    padding: 5px 5px 5px 5px;
-    /* margin: 5px; */
-  }
-
-  input {
-    color: rgb(171, 171, 171);
-    height: 30px;
-    width: 200px;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-  }
-
-  textarea {
-    color: rgb(171, 171, 171);
-    height: 100px;
-    min-width: 200px;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
-    border-radius: 5px;
-  }
-
-  #submit{
-    background-color: #0033cc;
-    /* float: left; */
-    /* background-color: rgba(111, 171, 130, 1); */
-    border-radius: 5px;
-    border: none;
-    color: white;
-    height: 5%;
-    margin: 5px;
-    padding: 10px;
-  }
+  background-color: rgba(241, 241, 241, 1);
+  display: inline-block;
+  justify: center;
+  float: center;
+  max-width: 800px;
+  padding: 5px 5px 5px 5px;
+  /* margin: 5px; */
 }
+
+input {
+  color: rgb(171, 171, 171);
+  height: 30px;
+  width: 200px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+textarea {
+  color: rgb(171, 171, 171);
+  height: 100px;
+  min-width: 200px;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+#submit {
+  background-color: #0033cc;
+  /* float: left; */
+  /* background-color: rgba(111, 171, 130, 1); */
+  border-radius: 5px;
+  border: none;
+  color: white;
+  height: 5%;
+  margin: 5px;
+  padding: 10px;
+}
+}
+
 /*
 .col{
   display:inline-block;
@@ -340,7 +345,7 @@ form.container {
 
 /* #samples{ */
 
-  /* #projects{
+/* #projects{
   width: 95%;
   margin-top: 30px;
   margin-left: 20px;
@@ -348,11 +353,11 @@ form.container {
   /* margin: auto; */
 /* } */
 
-.samples{
+.samples {
   margin-top: 20px;
 }
 
-#projects{
+#projects {
   width: 95%;
   margin-top: 30px;
   margin-left: 20px;
@@ -360,7 +365,7 @@ form.container {
 }
 
 
-#media{
+#media {
   width: 95%;
   margin-top: 30px;
   margin-left: 20px;
@@ -390,13 +395,13 @@ form.container {
 
 .row {
   /* justify-content: space-between; */
-/*   display:flex; */
-/*   flex-wrap: wrap; */
+  /*   display:flex; */
+  /*   flex-wrap: wrap; */
   padding: 2px;
-  border:1px dotted;
+  border: 1px dotted;
 }
 
-.row  .col {
+.row .col {
   width: 30%;
   max-height: 600px;
   margin: 5px 2px 5px 2px;
@@ -404,27 +409,27 @@ form.container {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 225px;
-    max-width: 300px;
-    height: 100%;
-    margin: 5px 2px 5px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 225px;
+  max-width: 300px;
+  height: 100%;
+  margin: 5px 2px 5px 2px;
 
 }
 
 .card .card-title {
-  text-align:center;
+  text-align: center;
 }
 
 .card .card-image {
-/*     border:3px solid green; */
+  /*     border:3px solid green; */
 }
 
 .card .card-image img {
-  height:180px;
-  object-fit:cover;
+  height: 180px;
+  object-fit: cover;
 }
 
 
@@ -444,7 +449,7 @@ form.container {
 } */
 
 
-.container > img {
+.container>img {
   width: 50%;
 }
 
@@ -453,25 +458,29 @@ form.container {
   display: flex;
   justify-content: space-around;
 }
+
 .carousel-images {
   width: 80%;
-      height: 300px;
-/*   background: #fa8d8e; */
+  height: 300px;
+  /*   background: #fa8d8e; */
   padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
-/*   box-shadow: 2px 2px #f2cd99; */
+  /*   box-shadow: 2px 2px #f2cd99; */
 }
+
 .carousel-images img {
   width: 100%;
   border-radius: 10px;
   display: none;
-      height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
+
 .carousel-images img:first-of-type {
   display: block;
 }
+
 .carousel-button {
   align-self: center;
   background: #f2cd99;
@@ -481,6 +490,7 @@ form.container {
   text-align: center;
   box-shadow: 1px 1px #fa8d8e;
 }
+
 .carousel-button:hover {
   cursor: pointer;
   background: #fa8d8e;
@@ -496,25 +506,30 @@ button {
   background-color: yellow;
 }
 
-  footer {
-    text-align: left;
-    padding: 20px 30px 20px 30px;
-  }
+footer {
+  text-align: left;
+  padding: 20px 30px 20px 30px;
+}
 
 
 
-  @media (max-width: 400px) {
-    .row {
-      display: block;
-      .card {
-        width: 100%;
-        margin: 0 0 10px 0;
-      }
+@media (max-width: 400px) {
+  .row {
+    display: block;
+
+    .card {
+      width: 100%;
+      margin: 0 0 10px 0;
     }
   }
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
   .topnav a.icon {
     float: right;
     display: block;
@@ -523,7 +538,10 @@ button {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
+
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -531,6 +549,7 @@ button {
     background-color: white;
     display: block;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;

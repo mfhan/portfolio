@@ -1,18 +1,20 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href='http://fonts.googleapis.com/css?family=Lato|Raleway|Pacifico|Caveat|Dekko|Bree+Serif|Freckle+Face|Knewave|Mountains+of+Christmas|Unkempt&display=swap' rel='stylesheet'>
+  <link
+    href='http://fonts.googleapis.com/css?family=Lato|Raleway|Pacifico|Caveat|Dekko|Bree+Serif|Freckle+Face|Knewave|Mountains+of+Christmas|Unkempt&display=swap'
+    rel='stylesheet'>
   <title>Marie-France Han</title>
 
   <!-- bootstrap css -->
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -21,137 +23,170 @@
 <body>
   <div class="main">
 
-      <section class="topnav" id="myTopnav">
-        <a href="#skills" class="active">MARIE-FRANCE HAN</a>
-        <a href="#about">About</a>
-        <a href="#contactme">Contact</a>
-        <a href="#samples">Projects</a>
-        <!-- <a href="#media">Media</a> -->
-        <a href="javascript:void(0);" class="icon" onClick="myToggler()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </section>
+    <section class="topnav" id="myTopnav">
+      <a href="#skills" class="active">MARIE-FRANCE HAN</a>
+      <a href="#about">About</a>
+      <a href="#contactme">Contact</a>
+      <a href="#samples">Projects</a>
+      <!-- <a href="#media">Media</a> -->
+      <a href="javascript:void(0);" class="icon" onClick="myToggler()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </section>
 
     <section id='skills'>
-      <div class ='kant'>
-        <h3 class = 'kantscript'>Some Things I Can't Do:</h3>
-          <div class ='listicle'>
-          <ul class = 'kantdo'>
+      <div class='kant'>
+        <div class='list-button'>
+
+        </div>
+        <h3 class='kantscript'>Some Things I Can't Do:</h3>
+        <h5><button id="refreshKant" type="submit" onClick="populateKantList()">Again!</button></h5>
+        <div class='listicle'>
+          <ul class='kantdo'>
           </ul>
         </div>
-       <!-- <div class = 'list-button'>
-          <h5><button id="refreshKant" type="submit">Repeat</button></h5>
-       </div> -->
+
       </div>
 
 
-      <div class ='can'>
-        <h3 class = 'canscript'>...and Lots of Things I CAN DO!</h3>
-          <div class ='listicle'>
-            <ul class = 'cando'>
-            </ul>
-          </div>
-          <!-- <div class = 'list-button'>
-           <h5><button id="refreshCan" type="submit">Repeat</button></h5>
-          </div> -->
-          </div>
+      <div class='can'>
+        <h3 class='canscript'>...and Lots of Things I CAN DO!</h3>
+        <div class='list-button'>
+          <h5><button id="refreshCan" type="submit" onClick="populateCanList()">More!</button></h5>
+        </div>
+        <div class='listicle'>
+          <ul class='cando'>
+          </ul>
+        </div>
+
+      </div>
     </section>
 
 
-    <section id = 'about'>
+    <section id='about'>
 
-        <div class="social">
-          <h3>ABOUT ME:</h3>
-          <img class = 'emoji' src="assets/emoji.png"
-          height="120" width="130">
-          <a href="https://www.facebook.com/mariefrancehan" target="_blank">
-          <img class='social-logo'  src="assets/social/icon_facebook.svg" > </a>
-          <a href="https://www.github.com/mfhan" target="_blank">
-          <img class='social-logo'  src="assets/social/github.png" ></a>
-          <a href="https://www.LinkedIn.com/in/mariefr" target="_blank">
-          <img class='social-logo'  src="assets/social/linked25.png"></a>
-        </div>
+      <div class=" social">
+        <h3>ABOUT ME:</h3>
+        <img class='emoji' src="assets/emoji.png" height="120" width="130">
+        <a href="https://www.facebook.com/mariefrancehan" target="_blank">
+          <img class='social-logo' src="assets/social/icon_facebook.svg"> </a>
+        <a href="https://www.github.com/mfhan" target="_blank"></a>
+        <img class='social-logo' src="assets/social/icon-ig.png">
+        <a href="https://www.instagram.com/mariefr" target="_blank"></a>
+        <img class='social-logo' src="assets/social/github.png"></a>
+        <a href="https://www.LinkedIn.com/in/mariefr" target="_blank">
+          <img class='social-logo' src="assets/social/linked25.png"></a>
+      </div>
 
-          <ul class="bio">
-          <li id="subhead"> <strong>BIO:</strong> </li>
-          <li style="list-style-type:disc;">Born in France <img class='bio-logo' src="assets/social/tricolore.png"> += Grew up in Africa <img class = 'bio-logo' src="assets/social/ivory.png">  <img class = 'bio-logo' src="assets/social/tunisia.png"> <img class = 'bio-logo' src= "assets/social/morocco.png"> <img class = 'bio-logo' src="assets/social/cameroon.png"> += College in Paris <img class='bio-logo' src ="assets/social/eiffel.png"> </li>
+      <ul class="bio">
+        <li id="subhead"> <strong>BIO:</strong> </li>
+        <li style="list-style-type:disc;">Born in France <img class='bio-logo' src="assets/social/tricolore.png"> +=
+          Grew up in Africa <img class='bio-logo' src="assets/social/ivory.png"> <img class='bio-logo'
+            src="assets/social/tunisia.png"> <img class='bio-logo' src="assets/social/morocco.png"> <img
+            class='bio-logo' src="assets/social/cameroon.png"> += College in Paris <img class='bio-logo'
+            src="assets/social/eiffel.png"> </li>
 
-          <li id="subhead"> <strong>JOURNALISM:</strong> </li>
+        <li id="subhead"> <strong>JOURNALISM:</strong> </li>
 
-          <li style="list-style-type:disc;">Public Info officer at the United Nations <img class='bio-logo'  src="assets/social/un_logo.png"> in New York; Security Council and General Assembly</li>
-          <li style="list-style-type:disc;">Columbia <img class='bio-logo'  src="assets/social/columbia.png"> journalism school </li>
-          <li style="list-style-type:disc;"> Tech reporter at Reuters<img class='bio-logo'  src="assets/social/reutersmini.png"> covering  Samsung, Apple, Sony
-          <li style="list-style-type:disc;"> News editor at Bloomberg <img class='bio-logo'  src="assets/social/bloomberg.png"> covering Russia <img class='bio-logo'  src="assets/social/angryputin.png"> and China </li>
-
-
-          <li id="subhead"> <strong>TECH:</strong> </li>
-          <li style="list-style-type:disc;"> Tech evangelist at Jet.com <img class='bio-logo'  src="assets/social/jet.com.png"> building tech talks and workshop series</li>
-          <li style="list-style-type:disc;"><strong>JavaScript</strong> including <strong>React.js</strong> <img class='bio-logo'  src="assets/social/react.png"> and <strong>Node.js</strong> <img class='bio-logo'  src="assets/social/node.png"></li>
-          <li style="list-style-type:disc;">Git and GitHub <img class='bio-logo' src="assets/social/GitHub.png">; <strong> HTML5 </strong> <img class='bio-logo' src="assets/social/html5.png"> and CSS <img class='bio-logo' src="assets/social/css3.png"> </li>
-          <li style="list-style-type:disc;" >SQL <img class='bio-logo' src="assets/social/SQL.png"> and <strong>Python</strong> <img class='bio-logo' src="assets/social/python.png"> </li>
-        </ul>
-      </section>
-
-      <section id="contactme">
-        <h3>GET IN TOUCH:</h3>
-          <p class="contact"><strong>Email:</strong> <a href="mailto:mf212mf@gmail.com?subject=Mail from Our Site&body=Body-goes-here" target="_blank" >mf212mf@gmail.com</a>
-          </p>
-          <!-- <p class="contact"><strong>Let's Meet!</strong> <a href="https://calendly.com/marief" target="_blank">My Calendar</a></p> -->
-
-          <!-- Calendly link widget begin -->
-          <p class="contact"><strong>Let's Meet:</strong><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marief'});return false;">My Schedule</a>
-        </p>
-<!-- Calendly link widget end -->
+        <li style="list-style-type:disc;">Public Info officer at the United Nations <img class='bio-logo'
+            src="assets/social/un_logo.png"> in New York; Security Council and General Assembly</li>
+        <li style="list-style-type:disc;">Columbia <img class='bio-logo' src="assets/social/columbia.png"> journalism
+          school </li>
+        <li style="list-style-type:disc;"> Tech reporter at Reuters<img class='bio-logo'
+            src="assets/social/reutersmini.png"> covering Samsung, Apple, Sony
+        <li style="list-style-type:disc;"> News editor at Bloomberg <img class='bio-logo'
+            src="assets/social/bloomberg.png"> covering Russia <img class='bio-logo' src="assets/social/angryputin.png">
+          and China </li>
 
 
-          <!-- Calendly inline widget begin -->
-        <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/marief" style="min-width:320px;height:630px;"></div> -->
-        <!-- Calendly inline widget end -->
-          <p class="contact"><strong>Phone:</strong> <a href="tel:6463203548"> 646 320 3548</a></p>
-          <form class="container">
-            <h4 id="CTA">LET'S TALK!</h4>
-            <input id="firstName" type="text" placeholder="First Name">
-            <input id="lastName" type="text" placeholder="Last Name">
-            <input id="email" type="text" placeholder="Email">
-            <textarea id="message" type="text" placeholder="Message"></textarea>
-            <button id="submit" type="submit">Thanks!</button>
-          </form>
+        <li id="subhead"> <strong>TECH:</strong> </li>
+        <li style="list-style-type:disc;"> Tech evangelist at Jet.com <img class='bio-logo'
+            src="assets/social/jet.com.png"> building tech talks and workshop series</li>
+        <li style="list-style-type:disc;"><strong>JavaScript</strong> including <strong>React.js</strong> <img
+            class='bio-logo' src="assets/social/react.png"> and <strong>Node.js</strong> <img class='bio-logo'
+            src="assets/social/node.png"></li>
+        <li style="list-style-type:disc;">Git and GitHub <img class='bio-logo' src="assets/social/GitHub.png">;
+          <strong>
+            HTML5 </strong> <img class='bio-logo' src="assets/social/html5.png"> and CSS <img class='bio-logo'
+            src="assets/social/css3.png">
+        </li>
+        <li style="list-style-type:disc;">SQL <img class='bio-logo' src="assets/social/SQL.png"> and
+          <strong>Python</strong> <img class='bio-logo' src="assets/social/python.png">
+        </li>
+      </ul>
+    </section>
 
-      </section>
+    <section id="contactme">
+      <h3>GET IN TOUCH:</h3>
+      <p class="contact"><strong>Email:</strong> <a
+          href="mailto:mf212mf@gmail.com?subject=Mail from Our Site&body=Body-goes-here"
+          target="_blank">mf212mf@gmail.com</a>
+      </p>
+      <!-- <p class="contact"><strong>Let's Meet!</strong> <a href="https://calendly.com/marief" target="_blank">My Calendar</a></p> -->
 
-      <section id ='samples'>
-        <h3>Coding Projects</h3>
-        <p></p>
-        <div class="row" id="projects">
-        </div>
+      <!-- Calendly link widget begin -->
+      <p class="contact"><strong>Let's Meet:</strong>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marief'});return false;">My
+          Schedule</a>
+      </p>
+      <!-- Calendly link widget end -->
 
-      </section>
 
-      <section id ='media'>
+      <!-- Calendly inline widget begin -->
+      <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/marief" style="min-width:320px;height:630px;"></div> -->
+      <!-- Calendly inline widget end -->
+      <p class="contact"><strong>Phone:</strong> <a href="tel:6463203548"> 646 320 3548</a></p>
+      <form class="container">
+        <h4 id="CTA">LET'S TALK!</h4>
+        <input id="firstName" type="text" placeholder="First Name">
+        <input id="lastName" type="text" placeholder="Last Name">
+        <input id="email" type="text" placeholder="Email">
+        <textarea id="message" type="text" placeholder="Message"></textarea>
+        <button id="submit" type="submit">Thanks!</button>
+      </form>
+
+    </section>
+
+    <section id='samples'>
+      <h3>Coding Projects</h3>
+      <p></p>
+      <div class="row" id="projects">
+      </div>
+
+    </section>
+
+    <!-- <section id ='media'>
         <h3>Clips from Reuters and Bloomberg</h3>
         <p></p>
         <div class="row" id="clips">
         </div>
-      </section>
+      </section> -->
 
-    </div>
-
-
-    <footer>
-      <p>&copy; 2019 Marie-France Han</p>
-    </footer>
+  </div>
 
 
+  <footer>
+    <p>&copy; 2019 Marie-France Han</p>
+  </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-    <script src="script.js"></script>
-  </body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+  <script src="script.js"></script>
+</body>
+
 </html>
