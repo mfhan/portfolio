@@ -2,7 +2,7 @@ html,
 body {
   /* display: flex; */
   /* background-color: #F5F5F5; */
-  background-color: #ffcc00;
+  background-color: #D1D1E0;
   font-color: black;
   font-family: 'Lato' sans-serif;
   font-size: 100%;
@@ -71,14 +71,16 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: red;
+  /* background-color: red; */
+  background-color: #4f63a0;
   opacity: 0.8;
   color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: red;
+  /* background-color: red; */
+  background-color: #4f63a0;
   opacity: 0.8;
   color: white;
 }
@@ -141,16 +143,18 @@ h5 {
 
 .list-button {
   /* text-align:right; */
-  float: right;
+  /* float: right; */
   /* padding: 10px;
   margin: 10px; */
+  display: block;
+  width: 100%;
 }
 
 .kant {
   /* display: inline-block; */
   max-width: 800px;
-  background-color: #ffff00;
-  border: 5px solid #ee3e80;
+  background-color: #a4bcd4;
+  border: 5px solid #4f63a0;
   border-radius: 10px;
   padding: 20px 2% 5px 2%;
   margin-top: 10px;
@@ -165,6 +169,7 @@ h5 {
   padding-top: 2px;
   font-size: 16px;
   color: black;
+  list-style-type: none;
 }
 
 #refreshKant {
@@ -182,9 +187,9 @@ h5 {
 .can {
   /* display: inline-block; */
   max-width: 800px;
-  background-color: #0066cc;
-  border: 5px solid #ff4d88;
-  border-style: dashed;
+  background-color: #7e81a0;
+  border: 5px solid #4f63a0;
+  /* border-style: dashed; */
   border-radius: 10px;
   padding: 10px 2% 5px 2%;
   margin-top: 10px;
@@ -200,8 +205,23 @@ h5 {
   font-size: 16px;
   color: white;
   padding-bottom: 5 px;
+  list-style-type: none;
   /* text-shadow: 2px 2px 2px white; */
 }
+
+.refreshButton {
+  background-color: #d9d9d9;
+  /* float: left; */
+  /* background-color: rgba(111, 171, 130, 1); */
+  border-radius: 5px;
+  /* border-color: black; */
+  border: 1 px solid;
+  color: black;
+  height: 5%;
+  margin: 5px;
+  padding: 10px;
+}
+
 
 #refreshCan {
   background-color: #d9d9d9;
@@ -267,12 +287,18 @@ li {
   margin-top: 5px;
 }
 
+.subhead {
+  initial-letter: 3;
+  margin-top: 15px;
+  list-style-type: none;
+}
 
-
+/* 
 .subhead::first-letter {
   initial-letter: 3;
   margin-top: 15px;
-}
+  list-style-type: none;
+} */
 
 .contact {
   display: block;
@@ -290,11 +316,13 @@ li {
 
 form.container {
   background-color: rgba(241, 241, 241, 1);
-  display: inline-block;
+  /* display: inline-block; */
+  display: grid;
   justify: center;
-  float: center;
+  /* float: center; */
+  float: left;
   max-width: 800px;
-  padding: 5px 5px 5px 5px;
+  padding: 20px;
   /* margin: 5px; */
 }
 
@@ -302,7 +330,7 @@ input {
   color: rgb(171, 171, 171);
   height: 30px;
   width: 200px;
-  margin: 5px;
+  margin: 10px;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -312,22 +340,26 @@ textarea {
   color: rgb(171, 171, 171);
   height: 100px;
   min-width: 200px;
-  margin: 5px 5px 5px 5px;
-  padding: 5px 5px 5px 5px;
+  margin: 10px;
+  padding: 10px;
   border-radius: 5px;
 }
 
 #submit {
+  display: inline-block;
   background-color: #0033cc;
-  /* float: left; */
+  float: none;
+  margin-right: 20px;
+  vertical-align: middle;
   /* background-color: rgba(111, 171, 130, 1); */
   border-radius: 5px;
   border: none;
   color: white;
   height: 5%;
-  margin: 5px;
-  padding: 10px;
-}
+  min-height: 20px;
+  min-width: 100px;
+  /* margin: 5px; */
+  /* padding: 10px; */
 }
 
 /*
@@ -499,15 +531,14 @@ textarea {
 }
 
 
-
-
 button {
   margin: 10px 10px 10px 10px;
   background-color: yellow;
 }
 
-footer {
+#footer {
   text-align: left;
+  margin: 20px 30px 20px 30px;
   padding: 20px 30px 20px 30px;
 }
 

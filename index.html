@@ -12,7 +12,7 @@
   <!-- bootstrap css -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,7 +27,7 @@
       <a href="#skills" class="active">MARIE-FRANCE HAN</a>
       <a href="#about">About</a>
       <a href="#contactme">Contact</a>
-      <a href="#samples">Projects</a>
+      <!-- <a href="#samples">Projects</a> -->
       <!-- <a href="#media">Media</a> -->
       <a href="javascript:void(0);" class="icon" onClick="myToggler()">
         <i class="fa fa-bars"></i>
@@ -40,7 +40,7 @@
 
         </div>
         <h3 class='kantscript'>Some Things I Can't Do:</h3>
-        <h5><button id="refreshKant" type="submit" onClick="populateKantList()">Again!</button></h5>
+        <h5><button class="refreshButton" type="submit" onClick="populateKantList()">Again!</button></h5>
         <div class='listicle'>
           <ul class='kantdo'>
           </ul>
@@ -52,7 +52,7 @@
       <div class='can'>
         <h3 class='canscript'>...and Lots of Things I CAN DO!</h3>
         <div class='list-button'>
-          <h5><button id="refreshCan" type="submit" onClick="populateCanList()">More!</button></h5>
+          <h5><button class="refreshButton" type="submit" onClick="populateCanList()">More!</button></h5>
         </div>
         <div class='listicle'>
           <ul class='cando'>
@@ -70,26 +70,31 @@
         <img class='emoji' src="assets/emoji.png" height="120" width="130">
         <a href="https://www.facebook.com/mariefrancehan" target="_blank">
           <img class='social-logo' src="assets/social/icon_facebook.svg"> </a>
-        <a href="https://www.github.com/mfhan" target="_blank"></a>
-        <img class='social-logo' src="assets/social/icon-ig.png">
-        <a href="https://www.instagram.com/mariefr" target="_blank"></a>
-        <img class='social-logo' src="assets/social/github.png"></a>
+
+        <!-- <img class='social-logo' src="assets/social/icon-ig.png">
+        <a href="https://www.instagram.com/mariefr" target="_blank"></a> -->
+        <a href="https://www.github.com/mfhan" target="_blank">
+          <img class='social-logo' src="assets/social/github.png"></a>
         <a href="https://www.LinkedIn.com/in/mariefr" target="_blank">
           <img class='social-logo' src="assets/social/linked25.png"></a>
       </div>
 
       <ul class="bio">
-        <li id="subhead"> <strong>BIO:</strong> </li>
+        <!-- <li id="subhead"> <strong>BIO:</strong> </li> -->
         <li style="list-style-type:disc;">Born in France <img class='bio-logo' src="assets/social/tricolore.png"> +=
           Grew up in Africa <img class='bio-logo' src="assets/social/ivory.png"> <img class='bio-logo'
             src="assets/social/tunisia.png"> <img class='bio-logo' src="assets/social/morocco.png"> <img
-            class='bio-logo' src="assets/social/cameroon.png"> += College in Paris <img class='bio-logo'
-            src="assets/social/eiffel.png"> </li>
+            class='bio-logo' src="assets/social/cameroon.png">
+          <!-- += College in Paris <img class='bio-logo'
+            src="assets/social/eiffel.png">  -->
+        </li>
 
-        <li id="subhead"> <strong>JOURNALISM:</strong> </li>
+        <li class="subhead"> <strong>JOURNALISM:</strong> </li>
 
         <li style="list-style-type:disc;">Public Info officer at the United Nations <img class='bio-logo'
-            src="assets/social/un_logo.png"> in New York; Security Council and General Assembly</li>
+            src="assets/social/un_logo.png"> in New York
+          <!-- Security Council and General Assembly -->
+        </li>
         <li style="list-style-type:disc;">Columbia <img class='bio-logo' src="assets/social/columbia.png"> journalism
           school </li>
         <li style="list-style-type:disc;"> Tech reporter at Reuters<img class='bio-logo'
@@ -99,9 +104,11 @@
           and China </li>
 
 
-        <li id="subhead"> <strong>TECH:</strong> </li>
+        <li class="subhead"> <strong>TECH:</strong> </li>
+        <li style="list-style-type:disc;"> Tech Content at MongoDB <img class='bio-logo'
+            src="assets/social/mongoDB.png"> building tech content creation process</li>
         <li style="list-style-type:disc;"> Tech evangelist at Jet.com <img class='bio-logo'
-            src="assets/social/jet.com.png"> building tech talks and workshop series</li>
+            src="assets/social/jet.com.png"> creating tech talks and workshops</li>
         <li style="list-style-type:disc;"><strong>JavaScript</strong> including <strong>React.js</strong> <img
             class='bio-logo' src="assets/social/react.png"> and <strong>Node.js</strong> <img class='bio-logo'
             src="assets/social/node.png"></li>
@@ -110,8 +117,9 @@
             HTML5 </strong> <img class='bio-logo' src="assets/social/html5.png"> and CSS <img class='bio-logo'
             src="assets/social/css3.png">
         </li>
-        <li style="list-style-type:disc;">SQL <img class='bio-logo' src="assets/social/SQL.png"> and
-          <strong>Python</strong> <img class='bio-logo' src="assets/social/python.png">
+        <li style="list-style-type:disc;">SQL <img class='bio-logo' src="assets/social/SQL.png">,
+          <strong>Python</strong> <img class='bio-logo' src="assets/social/python.png">, MongoDB <img class='bio-logo'
+            src="assets/social/mongoDB.png">
         </li>
       </ul>
     </section>
@@ -148,14 +156,14 @@
       </form>
 
     </section>
-
+    <!-- 
     <section id='samples'>
       <h3>Coding Projects</h3>
       <p></p>
       <div class="row" id="projects">
       </div>
 
-    </section>
+    </section> -->
 
     <!-- <section id ='media'>
         <h3>Clips from Reuters and Bloomberg</h3>
@@ -164,12 +172,17 @@
         </div>
       </section> -->
 
+    <section id='footer'>
+      &copy; 2023 Marie-France Han
+      </footer>
+    </section>
+
   </div>
 
 
-  <footer>
+  <!-- <footer>
     <p>&copy; 2019 Marie-France Han</p>
-  </footer>
+  </footer> -->
 
 
 
